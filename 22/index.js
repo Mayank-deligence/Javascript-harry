@@ -2,7 +2,6 @@
 let random_num = Math.floor(Math.random(1, 100) * 100) 
   
 // console.log(random_num)
-
 var n = 0;
 function guess_num(){
   n = n +  1
@@ -23,7 +22,6 @@ function guess_num(){
     guess_num();
   }
 }
-
 guess_num();
 let score = (100 - n)
 console.log(`Your score is ${score}`)

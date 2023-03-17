@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>43</title>
+    <title>47 Events</title>
 </head>
 <body>
-    I am start of this container (outer)
-    <div class="container">
-      I am start of this container (inner)
-      <div id="first">I am the first element</div>
-      I am end of this container (inner)
-    </div>
-    I am end of this container (outer)
-    </body>
+    <div class="container" onmouseenter="console.log('container ke andar mouse gaya')"
+    onclick="console.log('container me click hua')">
+    <button onclick="alert('hello'); let a = 6; console.log(a)">Click me</button>
+  </div>
+</body>
 <script src="index.js"></script>
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Accordion Panels</title>
+  <!-- Bootstrap CSS -->
+  <link  href="index.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1>Accordion Panels</h1>
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Enter panel header" id="name">
+          <button class="btn btn-primary" type="button" onclick="displayInput()">Add panel</button>
+        </div>
+        <div id="output">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="index.js"></script>
+
+  <script>
+// let panels = [];
+
+// function addSubcategory(panelIndex, parentIndex) {
+//   const name = document.getElementById(`name-${panelIndex}-${parentIndex}`).value;
+//   if (!panels[panelIndex].subcategories) {
+//     panels[panelIndex].subcategories = [];
+//   }
+//   panels[panelIndex].subcategories.push({ name: name });
+//   const subCat = document.getElementById(`subCat-${panelIndex}-${parentIndex}`);
+//   subCat.innerHTML = panels[panelIndex].subcategories.map((subcat, subIndex) => `
+//     <div class="accordion-item">
+//       <h2 class="accordion-header" id="panelsStayOpen-heading-${panelIndex}-${parentIndex}-${subIndex}">
+//         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse-${panelIndex}-${parentIndex}-${subIndex}" aria-expanded="false" aria-controls="panelsStayOpen-collapse-${panelIndex}-${parentIndex}-${subIndex}">
+//           ${subcat.name}
+//         </button>
+//       </h2>
+//       <div id="panelsStayOpen-collapse-${panelIndex}-${parentIndex}-${subIndex}" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-${panelIndex}-${parentIndex}-${subIndex}">
+//         <div class="accordion-body">
+//           <div class="input-group mb-3"> 
+//             <input type="text" class="form-control" placeholder="Enter subcategory name" id="name-${panelIndex}-${parentIndex}-${subIndex}">
+//             <button class="btn btn-primary" onclick="addSubcategory(${panelIndex}, ${subIndex})">Add</button>
+//           </div>
+//           <div id="subCat-${panelIndex}-${parentIndex}-${subIndex}">
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   `).join("");
+
+//   document.getElementById(`name-${panelIndex}-${parentIndex}`).value = "";
+// }
+
+// function displayInput() {
+//   const name = document.getElementById("name").value;
+//   panels.push({
+//     header: name
+//   });
+
+//   const output = document.getElementById("output");
+//   output.innerHTML = panels.map((panel, panelIndex) => `
+//     <div class="accordion-item">
+//       <h2 class="accordion-header" id="panelsStayOpen-heading-${panelIndex}">
+//         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse-${panelIndex}" aria-expanded="false" aria-controls="panelsStayOpen-collapse-${panelIndex}">
+//           ${panel.header}
+//         </button>
+//       </h2>
+//       <div id="panelsStayOpen-collapse-${panelIndex}" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading-${panelIndex}">
+//         <div class="accordion-body">
+//           <div class="input-group mb-3"> 
+//             <input type="text" class="form-control" placeholder="Enter subcategory name" id="name-${panelIndex}-0">
+//             <button class="btn btn-primary" onclick="addSubcategory(${panelIndex}, 0)">Add</button>
+//           </div>
+//           <div id="subCat-${panelIndex}-0">
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   `).join("");
+
+//   document.getElementById("name").value = "";
+// }
+
+</script>
+
+</body>
+</html>
